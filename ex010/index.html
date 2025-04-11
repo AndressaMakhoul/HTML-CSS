@@ -8,12 +8,19 @@
 <body>
     <h1>Usando links externos</h1> <!--envelopar a frase (command + shift + p - dar enter e colocar a tag a) / atributo target blank faz com que o site seja aberto em outra aba quando o vídeo está em outro site, evitando que a pessoa saia do seu site, usar rel external também é importante.-->
     <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a>.</p>
-    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no youtube</a></p>
-    <h2>Usando links internos</h1> <!--vai fazer a relação com outra pag que esta dentro do nosso servidor e diz respeito a nossa propria pag.
-    Passo-a-passo: Criar um novo arquivo dentro dessa pasta do vscode (aqui do lado esquerdo chamada pag002.html ! e mudar idioma -->
-    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html">segunda página</a></p> <!-- digite "a" e entre o >< colocar a frase que vai ser clicavel.
-    Para escolher a pag002, clique entre as aspas e aperte ctrl + espaço.
-    Para funcionar os arquivos devem estar junto na mesma pasta.-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no youtube</a></p> <!--só existe o external (externo)-->
+    <h2>Usando links internos</h1> <!--Vai fazer a relação com outra pag que esta dentro do nosso servidor e diz respeito a nossa propria pag.
+    - Passo-a-passo: Criar um novo arquivo dentro dessa pasta do vscode (aqui do lado esquerdo chamada pag002.html ! e mudar idioma -->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p> <!-- digite "a" e entre o >< colocar a frase que vai ser clicavel.
+    - Para escolher a pag002, clique entre as aspas e aperte ctrl + espaço.
+    - Para funcionar os arquivos devem estar junto na mesma pasta.
+    rel="next" vai para a próxima pág (avisa o google o que voce quer e nao deixa na mao dele para escolher)
+    - Target _self é para falar que você quer volte para a sua pág (evita criar págs novas para cada coisa)-->
     <a href=""></a>
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a>.</p> <!-- Pág 3 vai ser feita de um modo diferente.
+    - Passo-a-passo: Criar na pasta que estão esses arquivos uma nova pasta. Ela ja vai aparecer ali do lado esquerdo, abrir ele e fazer os primeiros passos do código (!).
+    - Envelopar a frase desejada (command + shift + p e usar a tag "a")
+    - Sempre que estiver em outra pasta tem que mostrar o caminho "noticias/pag003.html"
+    -->
 </body>
 </html>
