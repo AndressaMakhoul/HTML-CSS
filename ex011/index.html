@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture> <!--tag picture fala que aqui vai ter uma foto / tag img voce coloca a foto e o nome-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" sizes="image/png"> <!--TAMANHO P - esse tem que ser criado em cima dos demais-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--mudar min para max (aqui diz: ele vai carregar a foto G mas se ele for menor que 1000px vai carregar a foto M - automático)-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/sleepmusicno1-chrishaugen.mp3" controls autoplay></audio> <!--para funcionar automático colocar parâmetro autoplay, se nao funcionar colocar parâmetro controls-->
+    <!--Se quiser ter compatibilidade 100% com todos os navegadores MP3 WAV OGG (evita arquivos WAV pq sao pesados)-->
+    <p>Vamos criar outra maneira</p>
+    <audio src="midia/sleepmusicno1-chrishaugen.mp3" preload="metadata" autoplay controls loop></audio> <!--PADRAO NADA OU AUTO: PIORES COISAS - só vai considerar que o site acabou de carregar quando o audio carregar também, o que pode demorar dependendo do tamanho do arquivo, principlamente se for celular
+        METADATA: carrega nome do arquivo, algumas infos como data, etc
+        NONE : carrega nada, só quando o usuario clicar play no controle -->
+        <!--a ordem é importante, se o primeiro for mp3, primeiro ele vai tentar o mp3-->
+        <source src="midia/sleepmusicno1-chrishaugen.mp3" type="audio/mpeg">
+        <source src="midia/sleepmusicno1-chrishaugen.ogg" type="audio/ogg">
+        <source src="midia/sleepmusicno1-chrishaugen.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+        <a href="midia/sleepmusicno1-chrishaugen.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+</body>
+</html>
