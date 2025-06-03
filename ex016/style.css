@@ -1,0 +1,32 @@
+@charset "UFT-8"; /* regra para acentuações e caracteres especiais dentro das CSS */
+
+* { /* para poder usar o degrade de cima para baixo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #fdf3ee, #ebae90);
+}
+
+main {
+    background-color: #FFFFFF;
+    border-radius: 10px; /* arredondar as bordas */
+    box-shadow: 5px 5px 15px #a17762b7; /* para o lado, para baixo, espalhar, transparencia e cor */
+    width: 600px; /* largura */
+    padding: 10px; /* acolchoamento - espaço */
+    margin: auto; /* automaticamente vai centralizar o conteúdo*/
+}
+
+h1 {
+    color: #176266;
+    text-align: center;
+    text-shadow: 1px 1px 0px #10444756;
+}
+
+h2 {
+    color: #58ADB2;
+}
+
+p {
+    text-align: justify;
+}

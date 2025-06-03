@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Em HTML é id = em CSS é # (ele só pode ser usado 1x por pag) 
+   Em HTML é class = em CSSé . (pode ser usado em vários) */
+
+/* Hierarquia: Primeiro coloca o generico
+               O id sobrepoem o class mas o class tem que ser colocado antes */   
+
+body {
+    background-color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: aqua;
+}
+
+h2 {
+    color: blue;
+}
+
+.basico {
+    color: darkgreen;
+}
+
+.intermediario {
+    color: darkgoldenrod;
+}
+
+.avancado {
+    color: crimson;
+}
+
+.destaque {
+    background-color: rgba(0, 100, 139, 0.281);
+}
